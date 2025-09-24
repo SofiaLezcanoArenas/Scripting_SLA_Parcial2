@@ -96,13 +96,13 @@ namespace Parcial2OOPyTDD
     [TestFixture]
     public class DamageFormulaTests
     {
+
         [TestCase(1, 1, 1, 1, 1, 0, 0)]    // Caso 1
         [TestCase(1, 1, 1, 1, 1, 1, 1)]    // Caso 2
         [TestCase(1, 50, 100, 50, 1, 1, 16)] // Caso 3
         [TestCase(5, 50, 100, 50, 1, 1, 5)]  // Caso 4
         [TestCase(10, 20, 30, 15, 1, 1, 5)]  // Caso 5
-        public void CalculoDeDaño_EsperadoCorrecto(
-            int level, int pwr, int atk, int def, int spatk, int mod, int expected)
+        public void CalculoDeDaño_EsperadoCorrecto(int level, int pwr, int atk, int def, int spatk, int mod, int expected)
         {
             // Defensor con DEF y SpDEF = def
             Pokemon defender = new Pokemon("Dummy", 1, 10, def, spatk, def, new List<Type> { Type.Rock });

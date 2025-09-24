@@ -19,7 +19,7 @@ namespace Parcial2OOPyTDD
             Name = name;
             Type = type;
             MoveType = moveType;
-            Power = 0; //espera power
+            Power = power;
             Speed = speed;
         }
     }

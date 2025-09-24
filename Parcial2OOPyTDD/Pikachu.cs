@@ -9,7 +9,7 @@ namespace Parcial2OOPyTDD
     internal class Pikachu: Pokemon
     {
         public Pikachu()
-            : base("Pikachu", 0, 0, 0, 0, 0, new List<Type> { Type.Bug })
+            : base("Pikachu", 0, 10, 10, 10, 10, new List<Type> { Type.Electric })
         {
         }
     }
